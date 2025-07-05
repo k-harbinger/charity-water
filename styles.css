@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+}
+
+/* Add dropdown arrows */
+nav a::after {
+  content: " ▼";
+  font-size: 0.7em;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.btn-yellow {
+  background-color: #FFD400;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: all 0.2s ease;
+}
+
+.hero {
+  position: relative;
+  background-image: url('https://cdn2.dropmarkusercontent.com/52043/977b834afed47a20ded2dcc6db80dd0990a8cc8300545615456b4e789a8bf268/preview/8857_Ethiopia_2019_CG-.jpg?Expires=1751674249&Signature=c3hCCNT6xCI5hTowU8Fx09CM1FKZPy0ddDa2HlKn2L4AZBBZe6beQq81-J2UZxonO2t~UWDJgV9aq4WU75JkmVNTSuD4W0VPiijnRKs7TeNwsU0KjB-ouLhSUFDYbg9~PxZocdrFwMM4H-jmOgnVrYTZamoRjGlrMN~z5YMfqNv-OGg25jC5N5H~xzytsF10wAnYXC8AZcaUjig034CA-QSSnDzfd2ruXuw6pz6vY2Oz5kcaoBcU52Gy6NHYuA3fnA0Oy4F6mYZI0dqhsxHBcCBeIdr2xt-KXvklxQBCh~kJD6O2WYspMQ-0UoxIpVToE0h7pZZ7fO1ADvSa3y5FWQ__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.cta-button {
+  margin-top: 20px;
+  background-color: #FFD400;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bottom-bar {
+  background-color: #f8f8f8;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.bottom-bar button {
+  background-color: #a0bfcf;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover effects for interactivity */
+.cta-button:hover,
+.btn-yellow:hover,
+.bottom-bar button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: 24px;
+  }
+
+  nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .btn-yellow {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    padding: 10px;
+  }
+}
