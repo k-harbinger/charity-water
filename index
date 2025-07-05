@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity Water Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="cw_vector.svg" alt="Charity Water Logo">
+    </div>
+    <nav>
+      <a href="#">TAKE ACTION</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">WHY WATER?</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#">SIGN IN</a>
+      <button class="btn-yellow">GIVE</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Your donation, your impact.</h1>
+      <p>Hold your own fundraising campaigns, with 100% of proceeds going toward projects.</p>
+      <p>Accountability & transparency clear as water.</p>
+      <button class="cta-button">GIVE</button>
+    </div>
+  </section>
+
+  <section class="bottom-bar">
+    Thanks to generous private donors who fund our operational expenses, 100% of your donation directly funds clean water projects.
+    <button>LEARN MORE</button>
+  </section>
+
+</body>
+</html>
