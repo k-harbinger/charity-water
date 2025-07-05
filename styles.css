@@ -67,7 +67,7 @@ nav a::after {
 
 .hero {
   position: relative;
-  background-image: url('ethi.jpg');
+  background-image: url('ethi.png');
   background-size: cover;
   background-position: center;
   height: 80vh;
